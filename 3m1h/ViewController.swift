@@ -8,7 +8,15 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var name: UITextField!
+    @IBOutlet weak var pass: UITextField!
+    @IBAction func Login(_ sender: Any) {
+        name.backgroundColor = .orange
+    }
+    @IBAction func SignIn(_ sender: Any) {
+        pass.textColor = .blue
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
